@@ -18,7 +18,7 @@
 LOCAL_PATH := device/samsung/j3xnlte
 
 # Get non-open-source specific aspects
-$(call inherit-product-if-exists, vendor/samsung/j3xnlte/j3xnlte-vendor.mk)
+$(call inherit-product, vendor/samsung/j3xnlte/j3xnlte-vendor.mk)
 
 # Permissions
 PRODUCT_COPY_FILES += \
