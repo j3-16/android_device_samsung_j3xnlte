@@ -36,4 +36,3 @@ rm -rf $DEVBASE/*
 extract ../../$VENDOR/$DEVICE/proprietary-files.txt $DEVBASE
 
 ./../../$VENDOR/$DEVICE/setup-makefiles.sh
-

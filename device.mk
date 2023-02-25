@@ -42,5 +42,5 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/nfc/libnfc-nxp.conf:system/etc/libnfc-nxp.conf \
     $(LOCAL_PATH)/configs/nfc/nfcee_access.xml:system/etc/nfcee_access.xml
 
-# Inherit from sharkls-common
-$(call inherit-product, device/samsung/sharkls-common/sharkls.mk)
+# Inherit from j3x-common
+$(call inherit-product, device/samsung/j3x-common/common.mk)

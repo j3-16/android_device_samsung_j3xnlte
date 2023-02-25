@@ -1,6 +1,6 @@
 #
 # Copyright (C) 2016 The CyanogenMod Project
-# Copyright (C) 2017 The LineageOS Project
+# Copyright (C) 2018 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,12 +15,9 @@
 # limitations under the License.
 #
 
-# Inherit from j3x-common
-include device/samsung/j3x-common/BoardConfigCommon.mk
+PRODUCT_MAKEFILES := \
+	$(LOCAL_DIR)/lineage_j3xnlte.mk
 
-# Kernel
-TARGET_KERNEL_CONFIG := j3xnlte_defconfig
-
-# NFC
-BOARD_NFC_CHIPSET := pn548
-TARGET_USES_NQ_NFC := true
+COMMON_LUNCH_CHOICES := \
+	lineage_j3xnlte-userdebug \
+	lineage_j3xnlte-eng
