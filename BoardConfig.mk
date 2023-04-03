@@ -18,6 +18,10 @@
 # Inherit from j3x-common
 include device/samsung/j3x-common/BoardConfigCommon.mk
 
+# Init
+TARGET_INIT_VENDOR_LIB := libinit_j3xnlte
+TARGET_RECOVERY_DEVICE_MODULES := libinit_j3xnlte
+
 # Kernel
 TARGET_KERNEL_CONFIG := j3xnlte_defconfig
 
